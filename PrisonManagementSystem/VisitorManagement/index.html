@@ -7,9 +7,24 @@
 </head>
 <body>
     
-
-
+<ul id="ulStuff">
+    
+</ul>
+<button onclick="doSomething();">Click Me</button>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/_apiCalls.js"></script>
+<script>
+    function doSomething(){
+
+$.ajax({
+    type: 'GET',
+    url: 'http://localhost:63911/api/visit',
+    dataType: 'json',
+    success: function(data){
+        console.log(data)
+    }
+});
+}
+</script>
 </body>
 </html>
