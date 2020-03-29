@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7D8A657-1ACD-4381-898F-97913D45726B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManagementLibrary</RootNamespace>
+    <AssemblyName>ManagementLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\Models\Authentication_Authorization\IAuthUser.cs" />
+    <Compile Include="Api\Models\Conviction\IConviction.cs" />
+    <Compile Include="Api\Models\Medical\IMedicial.cs" />
+    <Compile Include="Api\Models\Prisoner\IPrisoner.cs" />
+    <Compile Include="Api\Models\Prison\IPrison.cs" />
+    <Compile Include="Api\Models\Visitor\FamilyFriendsVisit.cs" />
+    <Compile Include="Api\Models\Visitor\IVisitor.cs" />
+    <Compile Include="Api\Models\Visitor\OtherVisit.cs" />
+    <Compile Include="Api\Models\Visitor\SchoolVisit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql\_Internal\_SqHelper\ISqlHelper.cs" />
+    <Compile Include="Sql\_Internal\_SqHelper\SqlHelper.cs" />
+    <Compile Include="Sql\_Internal\_SqlDataAccess\_Authentication_Authorization\AuthDataAccess.cs" />
+    <Compile Include="Sql\_Internal\_SqlDataAccess\_Authentication_Authorization\IAuthDataAccess.cs" />
+    <Compile Include="Sql\_Internal\_SqlDataAccess\_Visitor\IVisitorDataAccess.cs" />
+    <Compile Include="Sql\_Internal\_SqlDataAccess\_Visitor\VisitorDataAccess.cs" />
+    <Compile Include="_GlobalVariables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sql\_Internal\_SqlDataAccess\_Conviction\" />
+    <Folder Include="Sql\_Internal\_SqlDataAccess\_Medical\" />
+    <Folder Include="Sql\_Internal\_SqlDataAccess\_Prisoner\" />
+    <Folder Include="Sql\_Internal\_SqlDataAccess\_Prison\" />
+    <Folder Include="Sql\_Public\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\form_schoolvisit.pdf" />
+    <None Include="Resources\form_visitors_attorneys_etc.pdf" />
+    <None Include="Resources\form_visitors_relatives_etc.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
