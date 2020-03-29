@@ -15,15 +15,15 @@ namespace ManagementLibrary.Api.Models.Visitor
         public int TRN { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string MobileNumber { get; set; }
-        public string WorkNumber { get; set; }
+        public int MobileNumber { get; set; }
+        public int WorkNumber { get; set; }
         public string Gender { get; set; }
         public string Occupation { get; set; }
         public DateTime DOB { get; set; }
         public string ResidentialAddress { get; set; }
         public string PostalAddress { get; set; }
         public string EmailAddress { get; set; }
-        public string PrisonerID { get; set; }
+        public int PrisonerID { get; set; }
         public string Relationship { get; set; }
         public DateTime ApprovedDateOfVisit { get; set; }
         public byte[] VisitorImage { get; set; }

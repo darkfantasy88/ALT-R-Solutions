@@ -61,6 +61,7 @@
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\Views" />
     <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="Published Location" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\AuthTbl.sql" />
@@ -79,5 +80,10 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PMS_DB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Published Location\PMS_DB.publish.xml" />
+    <None Include="PMS_DB.publish.xml" />
+    <None Include="Published Location\PMS_DB_BCK.publish.xml" />
   </ItemGroup>
 </Project>

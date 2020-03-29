@@ -49,6 +49,20 @@ namespace WebApi_v1.Controllers
             
             _visitDataAccess.InsertVisitor(value);
         }
+        [HttpPost]
+        [Route("school")]
+        public void InsertSchoolVisit([FromBody]SchoolVisit value)
+        {
+
+            _visitDataAccess.InsertVisitor(value);
+        }
+        [HttpPost]
+        [Route("other")]
+        public void InsertOtherVisit([FromBody]OtherVisit value)
+        {
+
+            _visitDataAccess.InsertVisitor(value);
+        }
 
         // PUT: api/Visit/5
         public void Put(int id, [FromBody]string value)
@@ -56,8 +70,11 @@ namespace WebApi_v1.Controllers
         }
 
         // DELETE: api/Visit/5
+        [HttpDelete]
+        [Route("delete/{id}")]
         public void Delete(int id)
         {
+            _visitDataAccess.DeleteVisitor(id);
         }
     }
 }
