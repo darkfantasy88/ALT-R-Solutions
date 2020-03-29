@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ManagementLibrary.Api.Models.Visitor;
+using ManagementLibrary.Sql._Internal._SqlDataAccess._Visitor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,23 +11,43 @@ using System.Web.Http.Cors;
 namespace WebApi_v1.Controllers
 {
     [EnableCors("*","*","*")]
+    [RoutePrefix("api/visit")]
     public class VisitController : ApiController
     {
-        // GET: api/Visit
-        public IEnumerable<string> Get()
+        IVisitDataAccess _visitDataAccess;
+        public VisitController(IVisitDataAccess visitDataAccess)
         {
-            return new string[] { "value1", "value2" };
+            _visitDataAccess = visitDataAccess;
+        }
+        // GET: api/Visit
+        [HttpGet]
+        [Route("getallvisits")]
+        public IEnumerable<IVisitor> Get()
+        {
+            return _visitDataAccess.GetVisits();
         }
 
         // GET: api/Visit/5
-        public string Get(int id)
+        [HttpGet]
+        [Route("getvisit/{schoolName}")]
+        public IEnumerable<SchoolVisit> GetBySchool(string schoolName)
         {
-            return "value";
+            return _visitDataAccess.GetVisitBySchool(schoolName);
+        }
+        [HttpGet]
+        [Route("getvisit/{institutionName}")]
+        public IEnumerable<IVisitor> GetByInstitution(string institutionName)
+        {
+            return _visitDataAccess.GetVisitByInstitution(institutionName);
         }
 
         // POST: api/Visit
-        public void Post([FromBody]string value)
+        [HttpPost]
+        [Route("familyfriends")]
+        public void InsertFamilyFriendsVisit([FromBody]FamilyFriendsVisit value)
         {
+            
+            _visitDataAccess.InsertVisitor(value);
         }
 
         // PUT: api/Visit/5

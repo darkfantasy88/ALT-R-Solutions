@@ -169,14 +169,27 @@ namespace ManagementLibrary.Sql._Internal._SqlDataAccess._Visitor
             _helper.SaveData<dynamic>(VERIFY_PROCEDURE_NAME, p);
         }
 
-        IList<IVisitor> IVisitDataAccess.GetVisitByInstitution(string _institutionName)
+        public IList<FamilyFriendsVisit> FamilyFriendsVisit(string _firstName, string _lastName)
         {
-            throw new NotImplementedException();
+
+            var p = new
+            {
+                firstname = _firstName,
+                lastname = _lastName
+            };
+            return _helper.GetDataGroup<FamilyFriendsVisit, dynamic>(GET_BY_PERSON_NAME_PROCEDURE_NAME, p);
+
         }
 
-        IList<IVisitor> IVisitDataAccess.GetVisitByName(string _firstName, string _lastName)
+        public IList<OtherVisit> OtherVisit(string _firstName, string _lastName)
         {
-            throw new NotImplementedException();
+            var p = new
+            {
+                firstname = _firstName,
+                lastname = _lastName
+            };
+            return _helper.GetDataGroup<OtherVisit, dynamic>(GET_BY_PERSON_NAME_PROCEDURE_NAME, p);
+
         }
     }
 }

@@ -7,9 +7,22 @@
 </head>
 <body>
     
-<ul id="ulStuff">
-    
-</ul>
+<div class="form-data">
+    <input type="text" name="" id="">
+    <select name="purpose" id="">
+        <option value="">School Visit</option>
+        <option value="">Family Visit</option>
+        <option value="">Friend Visit</option>
+        <option value="">Interview</option>
+        <option value="">Research</option>
+        <option value="">Attorney Visit</option>
+
+    </select>
+
+    <select name="prison" id="">
+        <option value=""></option>
+    </select>
+</div>
 <button onclick="doSomething();">Click Me</button>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/_apiCalls.js"></script>
@@ -21,7 +34,9 @@ $.ajax({
     url: 'http://localhost:63911/api/visit',
     dataType: 'json',
     success: function(data){
-        console.log(data)
+        $.each(data,function(index,val){
+            $('#ulStuff').append('<li>'+val+'</li>')
+        })
     }
 });
 }

@@ -23,7 +23,7 @@
 	[ValidIDNumber] varchar(20) null,
 	[PrisonerID] int null,
 	[Relationship] varchar(max) null,
-	[VisitStatus] varchar(max) not null check(VisitStatus='Approved' or VisitStatus='Declined' or VisitStatus='Deferred'),
+	[VisitStatus] varchar(max) NOT null check(VisitStatus='Approved' or VisitStatus='Declined' or VisitStatus='Deferred' or VisitStatus='Pending') DEFAULT 'Pending',
 	[ApprovedDateOfVisit] datetime2 null,
 	[Deleted] bit not null default 0
 )

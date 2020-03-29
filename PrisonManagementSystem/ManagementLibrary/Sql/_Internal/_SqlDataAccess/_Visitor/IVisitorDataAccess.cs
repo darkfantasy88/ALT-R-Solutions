@@ -20,9 +20,13 @@ namespace ManagementLibrary.Sql._Internal._SqlDataAccess._Visitor
 
         IList<IVisitor> GetVisits();
        // IVisitor GetVisitor(string _email);
-        IList<IVisitor> GetVisitByInstitution(string _institutionName);
-        IList<IVisitor> GetVisitByName(string _firstName, string _lastName);
-        IList<IVisitor> GetVisitByType(string _visitType);
+        IList<SchoolVisit> GetVisitBySchool(string _institutionName);
+        IList<OtherVisit> GetVisitByInstitution(string _institutionName);
+
+        IList<FamilyFriendsVisit> FamilyFriendsVisit(string _firstName, string _lastName);
+        IList<OtherVisit> OtherVisit(string _firstName, string _lastName);
+
+        //IList<IVisitor> GetVisitByType(string _visitType);
 
 
         void ApproveVisit(int _id,string _status);
