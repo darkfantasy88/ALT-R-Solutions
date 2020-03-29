@@ -83,7 +83,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Published Location\PMS_DB.publish.xml" />
-    <None Include="PMS_DB.publish.xml" />
-    <None Include="Published Location\PMS_DB_BCK.publish.xml" />
   </ItemGroup>
 </Project>
