@@ -53,7 +53,9 @@ namespace WebApi_v1
             container.RegisterType<VisitController>();
             #endregion
 
-
+            #region
+            container.Registertype<IMedicalDataAccess>
+            #endregion
 
         }
     }

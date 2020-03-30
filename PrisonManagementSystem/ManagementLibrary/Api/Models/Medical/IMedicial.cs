@@ -15,8 +15,8 @@ namespace ManagementLibrary.Api.Models.Medical
         string PhysicalDefect { get; set; }
         string MentalHealthStatus { get; set; }
         string MentalHealthDetails { get; set; }
-        string Height { get; set; }
-        string Weight { get; set; }
+        float Height { get; set; }
+        float Weight { get; set; }
         string Allergies { get; set; }
         string DrugTestStatus { get; set; }
         string DrugTestDetails { get; set; }
@@ -24,5 +24,6 @@ namespace ManagementLibrary.Api.Models.Medical
         string BloodTestDetails { get; set; }
         DateTime LastVist { get; set; }
         string PurposeOfVisit { get; set; }
+        string MedicationRequired {get;set;}
     }
 }
