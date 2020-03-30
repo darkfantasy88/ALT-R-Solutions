@@ -1,4 +1,5 @@
 using ManagementLibrary.Api.Models.Visitor;
+using ManagementLibrary.Sql._Internal._SqlDataAccess._Medical;
 using ManagementLibrary.Sql._Internal._SqlDataAccess._Visitor;
 using System;
 using Unity;
@@ -53,8 +54,9 @@ namespace WebApi_v1
             container.RegisterType<VisitController>();
             #endregion
 
-            #region
-            container.Registertype<IMedicalDataAccess>
+            #region Medical Dependency Management
+
+            container.RegisterType<IMedicalDataAccess, MedicalDataAccess>();
             #endregion
 
         }

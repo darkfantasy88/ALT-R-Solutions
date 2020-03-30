@@ -71,6 +71,7 @@
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Authentication_Authorization\AuthDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Authentication_Authorization\IAuthDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Medical\IMedicalDataAccess.cs" />
+    <Compile Include="Sql\_Internal\_SqlDataAccess\_Medical\MedicalDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Visitor\IVisitorDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Visitor\VisitorDataAccess.cs" />
     <Compile Include="_GlobalVariables.cs" />
