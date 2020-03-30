@@ -9,7 +9,9 @@ namespace ManagementLibrary.Api.Models.Medical
     public interface IMedicial
     {
         int MedicalID { get; }
-        string PrisonerID { get; }
+        int PrisonerID { get; set; }
+        string DoctorName { get; set; }
+        string DoctorSpecialty { get; set; }
         string PhysicalDefect { get; set; }
         string MentalHealthStatus { get; set; }
         string MentalHealthDetails { get; set; }
