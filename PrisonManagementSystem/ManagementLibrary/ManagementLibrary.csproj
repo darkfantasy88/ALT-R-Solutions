@@ -70,13 +70,13 @@
     <Compile Include="Sql\_Internal\_SqHelper\SqlHelper.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Authentication_Authorization\AuthDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Authentication_Authorization\IAuthDataAccess.cs" />
+    <Compile Include="Sql\_Internal\_SqlDataAccess\_Medical\IMedicalDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Visitor\IVisitorDataAccess.cs" />
     <Compile Include="Sql\_Internal\_SqlDataAccess\_Visitor\VisitorDataAccess.cs" />
     <Compile Include="_GlobalVariables.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Sql\_Internal\_SqlDataAccess\_Conviction\" />
-    <Folder Include="Sql\_Internal\_SqlDataAccess\_Medical\" />
     <Folder Include="Sql\_Internal\_SqlDataAccess\_Prisoner\" />
     <Folder Include="Sql\_Internal\_SqlDataAccess\_Prison\" />
     <Folder Include="Sql\_Public\" />
