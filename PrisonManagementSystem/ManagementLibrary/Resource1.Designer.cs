@@ -89,5 +89,15 @@ namespace ManagementLibrary {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] research_tor {
+            get {
+                object obj = ResourceManager.GetObject("research_tor", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

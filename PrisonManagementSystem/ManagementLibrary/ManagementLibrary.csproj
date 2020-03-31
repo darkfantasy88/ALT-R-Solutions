@@ -54,6 +54,7 @@
     <Compile Include="Api\Models\Authentication_Authorization\IAuthUser.cs" />
     <Compile Include="Api\Models\Conviction\IConviction.cs" />
     <Compile Include="Api\Models\Medical\IMedicial.cs" />
+    <Compile Include="Api\Models\Other Non-Essential\PrisonType.cs" />
     <Compile Include="Api\Models\Other Non-Essential\RehabProgram.cs" />
     <Compile Include="Api\Models\Other Non-Essential\StaffRole.cs" />
     <Compile Include="Api\Models\Other Non-Essential\StaffTypes.cs" />
@@ -92,6 +93,7 @@
     <None Include="Resources\form_schoolvisit.pdf" />
     <None Include="Resources\form_visitors_attorneys_etc.pdf" />
     <None Include="Resources\form_visitors_relatives_etc.pdf" />
+    <None Include="Resources\research_tor.pdf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resource1.resx">
