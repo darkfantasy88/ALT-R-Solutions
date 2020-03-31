@@ -12,10 +12,14 @@ namespace ManagementLibrary.Api.Models.Prisoner
         string FirstName { get; set; }
         string Lastname { get; set; }
         string Gender { get; set; }
-        string PrisonAssigned { get; set; }
+        DateTime DOB { get; set; }
+        string PrisonID { get; set; }
         byte[] FingerPrint { get; set; }
         DateTime DateOfConviction { get; set; } 
-        int TimeServed { get; set; }
+        int ConvictionID { get; set; }
+        float TimeServed { get; set; }
         byte[] Photo { get; set; }
+        string PrisonerType { get; set; }
+        string RehabPrograms { get; set; }
     }
 }

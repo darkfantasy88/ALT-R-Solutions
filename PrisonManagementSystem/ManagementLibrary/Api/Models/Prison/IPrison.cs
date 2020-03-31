@@ -8,13 +8,14 @@ namespace ManagementLibrary.Api.Models.Prison
 {
     public interface IPrison
     {
-        int PrisonID { get; set; }
+        string PrisonID { get; set; }
         string Name { get; set; }
         string Location { get; set; }
+        string History { get; set; }
+        byte[] Image { get; set; }
         int MaxCapacity { get; set; }
         int CurrentCapacity { get; set; }
-        string Type { get; set; }
-        int WarderCount { get; set; }
-
+        string PrisonType { get; set; }
+        int WarderToPrisonerRatio { get; }
     }
 }

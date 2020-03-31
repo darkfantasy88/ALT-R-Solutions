@@ -54,12 +54,16 @@
     <Compile Include="Api\Models\Authentication_Authorization\IAuthUser.cs" />
     <Compile Include="Api\Models\Conviction\IConviction.cs" />
     <Compile Include="Api\Models\Medical\IMedicial.cs" />
+    <Compile Include="Api\Models\Other Non-Essential\RehabProgram.cs" />
+    <Compile Include="Api\Models\Other Non-Essential\StaffRole.cs" />
+    <Compile Include="Api\Models\Other Non-Essential\StaffTypes.cs" />
     <Compile Include="Api\Models\Prisoner\IPrisoner.cs" />
     <Compile Include="Api\Models\Prison\IPrison.cs" />
     <Compile Include="Api\Models\Visitor\FamilyFriendsVisit.cs" />
     <Compile Include="Api\Models\Visitor\IVisitor.cs" />
     <Compile Include="Api\Models\Visitor\OtherVisit.cs" />
     <Compile Include="Api\Models\Visitor\SchoolVisit.cs" />
+    <Compile Include="Api\Models\Officers\IStaff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>

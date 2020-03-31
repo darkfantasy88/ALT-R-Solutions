@@ -10,8 +10,7 @@ namespace ManagementLibrary.Api.Models.Medical
     {
         int MedicalID { get; }
         int PrisonerID { get; set; }
-        string DoctorName { get; set; }
-        string DoctorSpecialty { get; set; }
+        string StaffID { get; set; }
         string PhysicalDefect { get; set; }
         string MentalHealthStatus { get; set; }
         string MentalHealthDetails { get; set; }

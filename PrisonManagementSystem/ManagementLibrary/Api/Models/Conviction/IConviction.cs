@@ -12,7 +12,6 @@ namespace ManagementLibrary.Api.Models.Conviction
         string ConvictionType { get; set; }
         int ConvictionProbationPeriod { get; set; }
         string ConvictionName { get; set; }
-        int PrisonerID { get; set; }
         int ConvictionPeriod { get; set; }
     }
 }
