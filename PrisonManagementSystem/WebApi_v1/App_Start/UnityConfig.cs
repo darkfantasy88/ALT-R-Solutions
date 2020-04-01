@@ -57,8 +57,12 @@ namespace WebApi_v1
             #region Medical Dependency Management
 
             container.RegisterType<IMedicalDataAccess, MedicalDataAccess>();
+            container.RegisterType<MedicalController>();
             #endregion
 
+            #region Staff Dependency Management
+            //container.RegisterType<IStaffDataAccess, StaffDataAccess>();
+            #endregion
         }
     }
 }

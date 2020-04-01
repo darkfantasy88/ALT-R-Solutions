@@ -54,6 +54,7 @@
     <Compile Include="Api\Models\Authentication_Authorization\IAuthUser.cs" />
     <Compile Include="Api\Models\Conviction\IConviction.cs" />
     <Compile Include="Api\Models\Medical\IMedicial.cs" />
+    <Compile Include="Api\Models\Other Non-Essential\IProbationer.cs" />
     <Compile Include="Api\Models\Other Non-Essential\PrisonType.cs" />
     <Compile Include="Api\Models\Other Non-Essential\RehabProgram.cs" />
     <Compile Include="Api\Models\Other Non-Essential\StaffRole.cs" />
@@ -100,6 +101,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrisonTypes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

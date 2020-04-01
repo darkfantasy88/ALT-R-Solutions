@@ -65,11 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\AuthTbl.sql" />
-    <Build Include="dbo\Stored Procedures\InsertAuthUser.sql" />
-    <Build Include="dbo\Stored Procedures\GetAllAuthUsers.sql" />
-    <Build Include="dbo\Stored Procedures\GetAuthUser.sql" />
-    <Build Include="dbo\Stored Procedures\DeleteAuthUser.sql" />
-    <Build Include="dbo\Stored Procedures\UpdateAuthUser.sql" />
     <Build Include="dbo\Tables\VisitorTbl.sql" />
     <Build Include="dbo\Stored Procedures\GetAllVisits.sql" />
     <Build Include="dbo\Stored Procedures\InsertVisit.sql" />
@@ -84,6 +79,15 @@
     <Build Include="dbo\Tables\PrisonTbl.sql" />
     <Build Include="dbo\Tables\PrisonerTbl.sql" />
     <Build Include="dbo\Tables\ConvictionTbl.sql" />
+    <Build Include="dbo\Stored Procedures\AddStaff.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStaff.sql" />
+    <Build Include="dbo\Stored Procedures\AllStaff.sql" />
+    <Build Include="dbo\Stored Procedures\GetStaff.sql" />
+    <Build Include="dbo\Stored Procedures\SignOut.sql" />
+    <Build Include="dbo\Stored Procedures\AddPrison.sql" />
+    <Build Include="dbo\Stored Procedures\AllPrisons.sql" />
+    <Build Include="dbo\Stored Procedures\UpdatePrison.sql" />
+    <Build Include="dbo\Stored Procedures\AddPrisoner.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PMS_DB.refactorlog" />

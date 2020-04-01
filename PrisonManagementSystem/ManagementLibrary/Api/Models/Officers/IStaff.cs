@@ -13,6 +13,8 @@ namespace ManagementLibrary.Api.Models.Officers
         string FirstName { get; set; }
         char MiddleInitial { get; set; }
         string LastName { get; set; }
+        string Gender { get; set; }
+        string EmailAddress { get; set; }
         DateTime DOB { get; set; }
         string StaffType { get; set; }
         string StaffRole { get; set; }

@@ -17,7 +17,7 @@ namespace ManagementLibrary.Api.Models.Prisoner
         byte[] FingerPrint { get; set; }
         DateTime DateOfConviction { get; set; } 
         int ConvictionID { get; set; }
-        float TimeServed { get; set; }
+        double TimeServed { get; set; }
         byte[] Photo { get; set; }
         string PrisonerType { get; set; }
         string RehabPrograms { get; set; }

@@ -16,6 +16,6 @@ namespace ManagementLibrary.Api.Models.Prison
         int MaxCapacity { get; set; }
         int CurrentCapacity { get; set; }
         string PrisonType { get; set; }
-        int WarderToPrisonerRatio { get; }
+        //int WarderToPrisonerRatio { get; }
     }
 }

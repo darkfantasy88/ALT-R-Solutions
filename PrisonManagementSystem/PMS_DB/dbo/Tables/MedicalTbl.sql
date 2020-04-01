@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [dbo].[MedicalTbl]
 (
 	[MedicalID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
-	[PrisonerID] nvarchar(max) Not null , 
-	[DoctorName] nvarchar(max) not null, 
-	[DoctorSpecialty] nvarchar(max) not null, 
+	[PrisonerID] int Not null foreign key references PrisonerTbl, 
+	[StaffID] varchar(12) not null foreign key references StaffTbl, 
 	[PhysicalDefect] nvarchar(max) not null, 
 	[MentalHealthStatus] nvarchar(max) not null, 
 	[MentalHealthDetails] nvarchar(max) not null, 

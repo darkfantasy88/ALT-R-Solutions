@@ -91,6 +91,20 @@ namespace ManagementLibrary {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Maximun Security
+        ///Remand
+        ///General
+        ///Agricultural
+        ///Golden Age
+        ///Juvenile.
+        /// </summary>
+        internal static string PrisonTypes {
+            get {
+                return ResourceManager.GetString("PrisonTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] research_tor {

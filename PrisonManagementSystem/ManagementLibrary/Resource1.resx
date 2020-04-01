@@ -127,6 +127,9 @@
   <data name="form_visitors_relatives_etc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\form_visitors_relatives_etc.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="PrisonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PrisonTypes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="research_tor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\research_tor.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
